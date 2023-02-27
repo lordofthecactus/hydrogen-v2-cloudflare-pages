@@ -1,4 +1,4 @@
-# remix-cf-pages-template-hmr
+# Hydrogen on Cloudflare Pages 
 
 A template to try out Remix's new dev server + HMR on Cloudflare Pages
 
@@ -7,7 +7,7 @@ A template to try out Remix's new dev server + HMR on Cloudflare Pages
 **Install dependencies:**
 
 ```sh
-yarn i
+yarn install
 ```
 
 You must use yarn at the moment or configure overrides for conflicts on @cloudflare/workers-types.
