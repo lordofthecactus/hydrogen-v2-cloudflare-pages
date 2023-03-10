@@ -5,7 +5,6 @@ const { createStorefrontClient } = require("@shopify/hydrogen");
 let remixHandler: ReturnType<typeof createRequestHandler>;
 
 export const onRequest: PagesFunction<Env> = ({ request, env }) => {
-  console.log(">>>>>>>", env);
   const { storefront } = createStorefrontClient({
     // buyerIp: getBuyerIp(request),
     i18n: { language: "EN", country: "US" },
