@@ -7,15 +7,15 @@ A template to try out Remix's new dev server + HMR on Cloudflare Pages
 **Install dependencies:**
 
 ```sh
-yarn install
+npm run install
 ```
-
+ 
 You must use yarn at the moment or configure overrides for conflicts on @cloudflare/workers-types.
 
 **Start in development mode with HMR:**
 
 ```sh
-yarn dev
+npm run dev
 ```
 
 Visit http://localhost:3000/
@@ -23,5 +23,5 @@ Visit http://localhost:3000/
 ## Deployment
 
 - Point a new Cloudflare Pages project at your repository
-- Configure the build command to be `yarn build`
+- Configure the build command to be `npm run build`
 - Configure the build output directory to be `public`
