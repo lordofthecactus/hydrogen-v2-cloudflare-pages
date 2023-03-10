@@ -6,7 +6,7 @@ let remixHandler: ReturnType<typeof createRequestHandler>;
 
 export const onRequest: PagesFunction<Env> = ({ request, env }) => {
   const { storefront } = createStorefrontClient({
-    // buyerIp: getBuyerIp(request),
+    // buyerIp: getBuyerIp(request), probably: CF-Connecting-IP
     i18n: { language: "EN", country: "US" },
     publicStorefrontToken: env.PUBLIC_STOREFRONT_API_TOKEN,
     privateStorefrontToken: env.PRIVATE_STOREFRONT_API_TOKEN,
